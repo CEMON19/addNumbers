@@ -1,10 +1,22 @@
 <html>
-    <head><title>Welcome</title></head>
+    <head>
+        <title>Welcome</title>
+        <script>
+        function add(){
+            no1=document.getElementById("no1").value;
+        no2=document.getElementById("no2")
+        ans=n01+no2;
+        alert("ans is "+ans);
+        }
+
+        </script>
+    </head>
     <body>
         <h1>Login</h1>
         <form>
-            <label>Name: </label><input type="name"><br><br>
-            <label>Password: </label><input type="password">
+            <label>Number 1</label><input type="number" id="no1"><br><br>
+            <label>Number 2 </label><input type="number" id="no2"><br><br>
+            <button type="submit" onclick="add()">Submit</button>
         </form>
     </body>
 </html>
